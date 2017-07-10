@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judoBtn"
+        android:src="@drawable/judobutton"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/karateBtn"
+        android:layout_alignStart="@+id/karateBtn"
+        android:layout_marginTop="30dp"
+        android:onClick="showJudoInfo"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/karateBtn"
+        android:src="@drawable/karatebutton"
+        android:layout_below="@+id/judoBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="showKarateInfo"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tkdButton"
+        android:src="@drawable/taekwondobutton"
+        android:layout_below="@+id/karateBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="showTkwInfo"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aikidoBtn"
+        android:src="@drawable/aikidobutton"
+        android:layout_below="@+id/tkdButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="showAikidoInfo"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jjButton"
+        android:src="@drawable/jiujitsubutton"
+        android:layout_below="@+id/aikidoBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="showJJInfo"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@null"
+        android:src="@drawable/backicon"
+        android:onClick="back"/>
+</RelativeLayout>

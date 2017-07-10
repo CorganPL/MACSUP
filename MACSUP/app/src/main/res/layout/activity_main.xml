@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kamil.judo.MainActivity"
+    android:id="@+id/layout">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listBtn"
+        android:src="@drawable/playersbutton"
+        android:onClick="switchLayoutPlayersList"
+        android:layout_below="@+id/tournamentsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/battleBtn"
+        android:src="@drawable/battlebutton"
+        android:onClick="switchLayoutBattle"
+        android:layout_below="@+id/listBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rulesBtn"
+        android:src="@drawable/rulesbutton"
+        android:layout_below="@+id/battleBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="switchLayoutRules"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tournamentsButton"
+        android:src="@drawable/tournamentbutton"
+        android:onClick="switchLayoutTournament"
+        android:layout_below="@+id/tournamentTv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tournamentTv"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/rulesBtn"
+        android:layout_alignEnd="@+id/rulesBtn"
+        android:src="@drawable/exiticon"
+        android:background="@null"
+        android:onClick="exitApp"/>
+
+</RelativeLayout>
